@@ -29,7 +29,7 @@ else:
 
 # Load the model
 # switch cpu to mps once fixed: https://github.com/pytorch/pytorch/issues/87886
-model = whisper.load_model("small.en", device='cpu')
+model = whisper.load_model("base.en", device='cpu')
 
 # Enable VAD - detects when you stop speaking and starts transcribing that automatically
 use_vad = False
